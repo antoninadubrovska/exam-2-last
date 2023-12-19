@@ -1,0 +1,465 @@
+
+
+body {
+    background-color: rgba(235, 235, 235, 1);
+    margin: auto;
+    max-width: 1050px;
+}
+
+/* HEADER SECTION */
+
+header {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    width: 1000px;
+}
+
+.promotion {
+    grid-row: 1 / 3;
+    grid-column: 1 / 4;
+    height: 544px;
+    background-color:rgba(199, 221, 234, 1);
+    background-image: url('./insurance/family.png'); 
+    background-attachment: relative;
+    background-position: 196px 270px;
+    background-repeat: no-repeat;
+    background-size: 58%;
+    /* width: 100%; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.learn-more {
+    grid-column: 4/-1;
+    background-color: rgba(241, 121, 73, 1);
+    /* width: 501px;
+    height: 272px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* left: 720px */
+}
+
+.join-today {
+    grid-column: 4/-1;
+    background-color: rgba(255, 185, 57, 1);
+    /* width: 501px;
+    height: 272px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+/* top: 272px
+left: 720px */
+}
+
+header h4 {
+    color: rgba(255, 255, 255, 1);
+    font-family: Frank Ruhl Libre;
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 41px;
+    /* letter-spacing: -0.02em; */
+    text-align: center;
+    margin: 0;  
+}
+
+header h2 {
+    font-family: Frank Ruhl Libre;
+    font-size: 45px;
+    font-weight: 900;
+    line-height: 45px;
+    letter-spacing: -0.02em;
+    /* text-align: left; */
+    margin: 0;  
+    /* padding-top: 1.4em;
+    padding-left: 2em;
+    padding-right: 2em;  */
+    padding: 8% 18% 0% 18%;
+}
+
+.promotion p {
+    font-family: Fira Sans;
+    font-size: 14px;
+    font-weight: 500;
+line-height: 24px; 
+letter-spacing: 0em; 
+text-align: left; 
+    padding: 6% 18% 0% 19%;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.learn-more, .join-today p { 
+    font-family: Fira Sans;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 13px;
+    letter-spacing: -0.02em;  
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+button {
+    border-radius: 100px; 
+    border: 0cap;
+    width: 131px;
+    height: 39px;
+    box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.1);
+    font-family: Fira Sans;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 12px;
+    text-align: center;
+    background: rgba(255, 255, 255, 1);
+/* top: 326px
+left: 324px */
+}
+
+header button {
+    position: relative;
+    left: -18%;
+    top: 6%;
+}
+
+/* NAV */
+
+.nav-home, .nav-our-offer, .nav-why, .nav-contact {
+    font-family: Fira Sans;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(169, 161, 158, 1); 
+    height: 6em;
+
+} 
+
+.nav-home {
+    grid-column-start: 2;
+    grid-column-end: 3;
+} 
+
+.nav-our-offer {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}  
+
+.nav-why {
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+
+.nav-contact {
+    grid-column-start: 5;
+    grid-column-end: 6;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(169, 161, 158, 1);
+}
+a:hover {
+    color: black;
+}
+
+button:hover {
+    background-color: rgba(235, 235, 235, 1);
+}
+
+
+
+/* MAIN */
+
+.body-wrapper {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    width: 1000px;
+    position: relative;
+}
+
+.your-safety-details-left {
+    grid-column: 1/4;
+    background-color: rgba(169, 161, 158, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.your-safety-details-right {
+   grid-column: 4/7; 
+    height: 612px;
+    background-color: rgba(169, 161, 158, 1);
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.your-safety-details-left h2 {
+    font-family: Frank Ruhl Libre;
+    font-size: 45px;
+    font-weight: 900;
+    color:rgba(255, 255, 255, 1);
+    margin: 0; 
+    padding: 16% 4% 0% 18%;
+}
+
+   .your-safety-details-left button {
+    position: relative;
+    left: 18%;
+    top: 6%;
+} 
+
+.your-safety-details-right p {
+    font-family: Fira Sans;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: Fira Sans;
+    line-height: 26px;
+    text-align: left;
+    padding: 17% 14% 0% 17% ;   
+}
+
+.about-us {
+    grid-column: 1/-1;
+    width: 100%;
+    height: 680px;
+    background-color: rgba(250, 177, 49, 1);  
+}
+
+
+.about-us h2 {
+    font-family: Frank Ruhl Libre;
+    font-size: 45px;
+    font-weight: 900;
+    line-height: 45px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    padding: 24% 25% 0% 25%;
+}
+
+.about-us p {
+    font-family: Fira Sans;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.6);
+    padding: 0% 25% 0% 25%;
+}
+
+/* HOW IT WORKS - 6 BOXES SECTION */
+
+.how-it-works-question {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: rgba(199, 221, 234, 1);
+    width: 334px;
+    height: 340px;
+    display: flex;
+    justify-content: center;
+}
+
+.how-it-works-question h2 {
+    align-self: center;
+    font-family: Frank Ruhl Libre;
+    font-size: 45px;
+    font-weight: 900;
+    padding: 0% 25%;
+}
+
+.one {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    background-color: rgba(255, 255, 255, 1);
+    width: 334px;
+    height: 340px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column; 
+}
+
+.how-it-works p {
+    margin: 3em 4em;
+    font-family: Fira Sans;
+    font-size: 17px;
+    font-weight: 500;
+    text-align: center;
+}
+
+h3 {
+    font-family: Frank Ruhl Libre;
+    font-size: 35px;
+    font-weight: 900;
+    line-height: 35px;
+    color: rgba(0, 0, 0, 0.4);
+    align-self: flex-start;
+    margin: 0.8em; 
+}
+
+.two {
+    grid-column-start: 5;
+    grid-column-end: 7;
+    background-color: rgba(235, 235, 235, 1);
+    width: 334px;
+    height: 340px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.three {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: rgba(255, 255, 255, 1);
+    width: 334px;
+    height: 340px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.four {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    background-color: rgba(241, 121, 73, 1);
+    width: 334px;
+    height: 340px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.five {
+    grid-column-start: 5;
+    grid-column-end: 7;
+    background-color: rgba(255, 255, 255, 1);
+    width: 334px;
+    height: 340px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+
+/* REVIEWS SECTION */
+
+.reviews-all {
+    position: absolute; 
+    /* z-index: 2; */
+    top: 22%;  
+    left: 6.5%; 
+}
+
+.reviews-wrapper {
+    display: flex;
+    gap: 4%;
+}
+
+.reviews {
+    background-color: white;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+    height: 308px;  
+    width: 270px;
+    border-radius: 5px;
+    padding: 0% 2% 2% 2%;
+}
+
+.review-one div {
+    background-color:rgba(199, 221, 234, 1);
+    background-image: url('./insurance/child.png'); 
+    background-attachment: relative;
+    background-position: 72px 9px;
+    background-repeat: no-repeat;
+    background-size: 40%;
+    width: 236px;
+    height: 150px;
+    position: relative;
+    top: -12%;
+    border-radius: 4px;
+}
+.review-two div {
+    background-color:rgba(255, 185, 57, 1);
+    background-image: url('./insurance/adult.png'); 
+    background-attachment: relative;
+    background-position: 72px 9px;
+    background-repeat: no-repeat;
+    background-size: 43%;
+    width: 236px;
+    height: 150px;
+    position: relative;
+    top: -12%;
+    border-radius: 4px;
+}
+
+.review-three div {
+    background-color:rgba(241, 121, 73, 1);
+    background-image: url('./insurance/old.png'); 
+    background-attachment: relative;
+    background-position: 43px 9px;
+    background-repeat: no-repeat;
+    background-size: 65%;
+    width: 236px;
+    height: 150px;
+    position: relative;
+    top: -12%;
+    border-radius: 4px;
+}
+
+
+.reviews h4 {
+    font-family: Frank Ruhl Libre;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.9);
+    margin: 0;
+}
+
+.reviews p {
+    font-family: Fira Sans;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: center;
+    color: rgb(121, 121, 121);
+    padding-top: 1%; 
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+}
+
+/* TAKE ME UP AGAIN SECTION */
+
+section {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    background-color: rgba(169, 161, 158, 1);
+    display: flex;
+    justify-content: center;
+}
+
+section p {
+    font-family: Fira Sans;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: rgba(119, 117, 116, 1);
+    height: 340px;
+    width: 1002px;
+    grid-column-start: 1;
+    grid-column-end: 7;
+}
