@@ -140,6 +140,7 @@ header button {
 
 } 
 
+
 .nav-home {
     grid-column-start: 2;
     grid-column-end: 3;
@@ -444,7 +445,7 @@ h3 {
     padding-bottom: 2%;
 }
 
-/* TAKE ME UP AGAIN SECTION */
+/* TAKE ME UP AGAIN */
 
 .up {
     grid-column: 1/-1;
@@ -458,7 +459,8 @@ h3 {
     font-size: 17px;
     font-weight: 500;
     margin-top: 0;
-}
+} 
+
 
 .up img {
     padding-left: 35%;
