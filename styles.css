@@ -1,4 +1,8 @@
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 3rem;
+}
 
 body {
     background-color: rgba(235, 235, 235, 1);
@@ -64,6 +68,10 @@ header h4 {
     line-height: 41px;
     text-align: center;
     margin: 0;  
+}
+
+header h4:hover {
+    color:black;
 }
 
 header h2 {
@@ -139,7 +147,6 @@ header button {
     height: 6em;
 
 } 
-
 
 .nav-home {
     grid-column-start: 2;
@@ -322,6 +329,8 @@ h3 {
     flex-direction: column;
 }
 
+
+
 .three {
     grid-column-start: 1;
     grid-column-end: 3;
@@ -355,6 +364,9 @@ h3 {
     flex-direction: column;
 }
 
+.one:hover, .two:hover, .three:hover, .four:hover, .five:hover {
+    filter: brightness(0.85);
+}
 
 /* REVIEWS SECTION */
 
